@@ -11,8 +11,12 @@ public class Main {
 
     Switch switchBulb = new Switch(bulb);
     switchBulb.switchTurnOff();
-    Switch switchBulb1 = new Switch(kitle);
-    switchBulb1.switchTurnOn();
+
+    Switch switchKit = new Switch(kitle);
+    switchKit.switchTurnOff();
+
+
+
 
   }
 }

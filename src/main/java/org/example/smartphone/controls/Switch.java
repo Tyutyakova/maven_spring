@@ -2,25 +2,20 @@ package org.example.smartphone.controls;
 
 import org.example.smartphone.devices.Kittle;
 import org.example.smartphone.devices.LightBulb;
+import org.example.smartphone.devices.Switchebales;
 
 public class Switch {
 
-  private LightBulb bulb;
-  private Kittle kittle;
+  private Switchebales switchebales;
 
-  public Switch(LightBulb bulb) {
-    this.bulb = bulb;
+  public Switch(Switchebales switchebales) {
+    this.switchebales = switchebales;
   }
-
-  public Switch(Kittle kittle) {
-    this.kittle = kittle;
-  }
-
   public void switchTurnOn() {
-        kittle.turnOn();
+    switchebales.turnOn();
   }
   public void switchTurnOff() {
-    bulb.turnOff();
+    switchebales.turnOff();
   }
 
 }
