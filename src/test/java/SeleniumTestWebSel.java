@@ -8,12 +8,9 @@ import org.testng.annotations.Test;
 import static org.testng.Assert.assertEquals;
 
 public class SeleniumTestWebSel {
-    public static void main(String[] args) {
-
-    }
 
     @Test
-    public void eightComponents() throws InterruptedException {
+    public void testSelen() throws InterruptedException {
         WebDriver driver = new ChromeDriver();
         driver.get("https://www.selenium.dev/selenium/web/web-form.html");
 
@@ -36,4 +33,16 @@ public class SeleniumTestWebSel {
         driver.quit();
     }
 
+    @Test
+    public void testUser() throws InterruptedException {
+       WebDriver driver = new ChromeDriver() ;
+       driver.get("http://users.bugred.ru/");
+       WebElement textBox = driver.findElement(By.name("q"));
+       textBox.sendKeys("qwerty");
+       Thread.sleep(1000);
+       driver.quit();
+    }
+
 }
+
+
