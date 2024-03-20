@@ -18,6 +18,8 @@ public class Main {
     Switch switchKit = new Switch(kitle);
     switchKit.switchTurnOff();
 
+
+
     System.out.println(getPad("A",3));
     }
 
